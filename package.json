@@ -1,0 +1,45 @@
+{
+  "name": "rollup-plugin-fontmin",
+  "type": "module",
+  "version": "0.0.0-alpha.0",
+  "packageManager": "pnpm@7.0.0",
+  "description": "Remove unused font glyphs from the project during packaging to reduce font file size",
+  "author": "Lete114 <me@imlete.cn>",
+  "license": "MIT",
+  "homepage": "https://github.com/lete114/rollup-plugin-fontmin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lete114/rollup-plugin-fontmin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lete114/rollup-plugin-fontmin/issues"
+  },
+  "exports": {
+    ".": {
+      "types": "./types",
+      "import": "./src/index.js",
+      "require": "./src/index.js"
+    }
+  },
+  "main": "./src/index.js",
+  "module": "./src/index.js",
+  "types": "./types",
+  "scripts": {
+    "play": "vite build playground",
+    "play:dev": "pnpm play && vite preview playground",
+    "build:doc": "tsc",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "fontmin": "^1.0.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
+    "rollup": "^4.9.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  }
+}
