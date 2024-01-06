@@ -28,6 +28,7 @@
     "play": "vite build playground",
     "play:dev": "pnpm play && vite preview playground",
     "build:doc": "tsc",
+    "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -38,8 +39,11 @@
     "@antfu/eslint-config": "^2.6.1",
     "@types/node": "^20.10.6",
     "eslint": "^8.56.0",
+    "fonteditor-core": "^2.3.2",
     "rollup": "^4.9.1",
+    "rollup-plugin-styles": "^4.0.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.8"
+    "vite": "^5.0.8",
+    "vitest": "^1.1.2"
   }
 }

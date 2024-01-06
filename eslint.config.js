@@ -4,4 +4,7 @@ export default antfu({
   ignores: [
     'types',
   ],
+  rules: {
+    curly: ['error', 'multi-line', 'consistent'],
+  },
 })

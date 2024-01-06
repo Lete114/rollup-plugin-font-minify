@@ -39,13 +39,11 @@ export default function fontmin(options = {}) {
 
   return {
     name: 'fontmin',
-    generateBundle(_, /** @type { OutputBundle } */ bundle) {
-      for (const [fileName, outuput] of Object.entries(bundle)) {
+    async generateBundle(_, /** @type { OutputBundle } */ bundle) {
+      for (const [fileName, output] of Object.entries(bundle)) {
         if (!isFontFileByExtension(fileName)) {
-          if (outuput.code)
-            reserveText += outuput.code
-          if (outuput.source)
-            reserveText += outuput.source
+          if (output.code) { reserveText += output.code }
+          if (output.source) { reserveText += output.source }
         }
       }
 
@@ -62,24 +60,33 @@ export default function fontmin(options = {}) {
         }
       }
 
-      for (const [fileName, outuput] of Object.entries(bundle)) {
+      const fontminPromises = []
+      for (const [fileName, output] of Object.entries(bundle)) {
         if (isFontFileByExtension(fileName)) {
-          const fontmin = new Fontmin().src(outuput.source)
+          const fontmin = new Fontmin().src(output.source)
 
           fontmin.use(Fontmin.glyph({ text: reserveText, hinting: false }))
 
-          fontmin.run(async (err, file) => {
-            if (err)
-              this.error(err)
+          const fontminPromise = new Promise((resolve, reject) => {
+            fontmin.run((err, file) => {
+              if (err) {
+                reject(err)
+                return
+              }
 
-            const originSize = displaySize(outuput.source.length)
-            const size = displaySize(file[0]._contents.length)
-            this.warn(`${originSize} ---> ${size}`)
+              const originSize = displaySize(output.source.length)
+              const size = displaySize(file[0]._contents.length)
+              this.warn(`${originSize} ---> ${size}`)
 
-            outuput.source = file[0]._contents
+              output.source = file[0]._contents
+              resolve(output)
+            })
           })
+
+          fontminPromises.push(fontminPromise)
         }
       }
+      await Promise.all(fontminPromises)
     },
   }
 }
