@@ -1,4 +1,5 @@
-import Fontmin from 'fontmin'
+import { parse } from 'node:path'
+import fontMinify from 'font-minify'
 import { displaySize, isFontFileByExtension } from './utils.js'
 
 /**
@@ -32,18 +33,22 @@ const defaultOptions = {
  * @param { Options } options
  * @returns { Plugin } rollup plugin
  */
-export default function fontmin(options = {}) {
+export default (options = {}) => {
   options = Object.assign({}, defaultOptions, options)
 
   let { reserveText, filter } = options
 
   return {
-    name: 'fontmin',
+    name: 'rollup-font-minify',
     async generateBundle(_, /** @type { OutputBundle } */ bundle) {
       for (const [fileName, output] of Object.entries(bundle)) {
         if (!isFontFileByExtension(fileName)) {
-          if (output.code) { reserveText += output.code }
-          if (output.source) { reserveText += output.source }
+          if (output.code) {
+            reserveText += output.code
+          }
+          if (output.source) {
+            reserveText += output.source
+          }
         }
       }
 
@@ -60,33 +65,34 @@ export default function fontmin(options = {}) {
         }
       }
 
-      const fontminPromises = []
       for (const [fileName, output] of Object.entries(bundle)) {
         if (isFontFileByExtension(fileName)) {
-          const fontmin = new Fontmin().src(output.source)
+          let { base, ext } = parse(fileName)
+          ext = ext.replace('.', '')
+          if (ext === 'otf') {
+            this.warn('[skip] not support font type "otf"')
+            continue
+          }
 
-          fontmin.use(Fontmin.glyph({ text: reserveText, hinting: false }))
-
-          const fontminPromise = new Promise((resolve, reject) => {
-            fontmin.run((err, file) => {
-              if (err) {
-                reject(err)
-                return
-              }
-
-              const originSize = displaySize(output.source.length)
-              const size = displaySize(file[0]._contents.length)
-              this.warn(`${originSize} ---> ${size}`)
-
-              output.source = file[0]._contents
-              resolve(output)
-            })
+          const buffer = await fontMinify({
+            ...options,
+            buffer: output.source,
+            text: reserveText,
+            readOptions: {
+              type: ext,
+            },
+            writeOptions: {
+              type: ext,
+            },
           })
 
-          fontminPromises.push(fontminPromise)
+          const originSize = displaySize(output.source.length)
+          const size = displaySize(buffer.length)
+          this.warn(`[${base}] ${originSize} ---> ${size}`)
+
+          output.source = buffer
         }
       }
-      await Promise.all(fontminPromises)
     },
   }
 }

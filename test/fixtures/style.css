@@ -1,6 +1,10 @@
 @font-face {
     font-family: 'SmileySans';
-    src: url('./SmileySans-Oblique.ttf') format('truetype');
+    src: 
+    url('../../playground/src/assets/fonts/SmileySans-Oblique.otf') format('opentype'),
+        /* url('../../playground/src/assets/fonts/SmileySans-Oblique.otf.woff2') format('woff2'), */
+        url('../../playground/src/assets/fonts/SmileySans-Oblique.ttf') format('truetype'),
+        url('../../playground/src/assets/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }

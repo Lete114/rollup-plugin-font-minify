@@ -6,7 +6,7 @@ Remove unused font glyphs from the project during packaging to reduce font file 
 
 Using npm:
 
-```console
+```bash
 npm install rollup-plugin-fontmin --save-dev
 ```
 

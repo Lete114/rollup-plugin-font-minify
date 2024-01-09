@@ -33,13 +33,12 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "fontmin": "^1.0.1"
+    "font-minify": "0.0.0-alpha.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
     "@types/node": "^20.10.6",
     "eslint": "^8.56.0",
-    "fonteditor-core": "^2.3.2",
     "rollup": "^4.9.1",
     "rollup-plugin-styles": "^4.0.0",
     "typescript": "^5.3.3",

@@ -3,10 +3,10 @@
  * @param { string } fileName file name
  * @returns is font
  */
-export function isFontFileByExtension(fileName: string): boolean;
+export function isFontFileByExtension(fileName: string): boolean
 /**
  * calculation of size
  * @param { number } byte
  * @returns display size
  */
-export function displaySize(byte: number): string;
+export function displaySize(byte: number): string
