@@ -4,7 +4,7 @@
  * @returns is font
  */
 export function isFontFileByExtension(fileName) {
-  return /\.(ttf|woff|woff2|otf)$/i.test(fileName)
+  return /\.(ttf|woff|woff2|otf|eot)$/i.test(fileName)
 }
 
 const numberFormatter = new Intl.NumberFormat('en', {
