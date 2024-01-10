@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'SmileySans';
-    src: 
-    url('../../playground/src/assets/fonts/SmileySans-Oblique.otf') format('opentype'),
-        /* url('../../playground/src/assets/fonts/SmileySans-Oblique.otf.woff2') format('woff2'), */
-        url('../../playground/src/assets/fonts/SmileySans-Oblique.ttf') format('truetype'),
-        url('../../playground/src/assets/fonts/SmileySans-Oblique.ttf.woff2') format('woff2');
+    src: url('../../playground/src/assets/fonts/SmileySans-Oblique.eot'); /* IE9+ */
+    src: url('../../playground/src/assets/fonts/SmileySans-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../playground/src/assets/fonts/SmileySans-Oblique.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../playground/src/assets/fonts/SmileySans-Oblique.woff') format('woff'), /* Modern Browsers */
+         url('../../playground/src/assets/fonts/SmileySans-Oblique.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../../playground/src/assets/fonts/SmileySans-Oblique.otf') format('opentype'); /* Legacy iOS */
     font-weight: normal;
     font-style: normal;
 }

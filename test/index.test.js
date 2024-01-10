@@ -50,19 +50,29 @@ describe('basic', () => {
     expect(getSizeAndHash(infos)).toMatchInlineSnapshot(`
       [
         {
+          "hash": "485be4c26a97e1252b597a7addde87439c70c21fb7d2ff86d34111805c8a4d11",
+          "name": "assets/SmileySans-Oblique-5eb23155.eot",
+          "size": "9.94 kB",
+        },
+        {
+          "hash": "43bee61ae0f9442d375c02b7d8f16adebf4705c381324fdf2104e66fc966554d",
+          "name": "assets/SmileySans-Oblique-74237fa4.woff2",
+          "size": "4.79 kB",
+        },
+        {
+          "hash": "5344bc8553c47356ad8851868501c28dc0aec38057d2a988186f0a08c7ff9a1f",
+          "name": "assets/SmileySans-Oblique-19b76555.woff",
+          "size": "9.81 kB",
+        },
+        {
+          "hash": "45f3051985c856de9f7d85a71053406b358ddbf86f83b284f5767b2f0a0d1d07",
+          "name": "assets/SmileySans-Oblique-b1997b28.ttf",
+          "size": "9.74 kB",
+        },
+        {
           "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
           "name": "assets/SmileySans-Oblique-115260f7.otf",
           "size": "1.63 MB",
-        },
-        {
-          "hash": "78e89cb1959182bff80420e9cb5831c88070658cd1ccc0a291ded5b552d486ee",
-          "name": "assets/SmileySans-Oblique-b1997b28.ttf",
-          "size": "9.38 kB",
-        },
-        {
-          "hash": "9badb8fdac1a822143332e43c302945ff7e41ef319efbcf91bd363c22eac62c5",
-          "name": "assets/SmileySans-Oblique.ttf-df33bc0f.woff2",
-          "size": "4.65 kB",
         },
       ]
     `)
@@ -86,19 +96,29 @@ describe('basic', () => {
     expect(getSizeAndHash(infos)).toMatchInlineSnapshot(`
       [
         {
+          "hash": "485be4c26a97e1252b597a7addde87439c70c21fb7d2ff86d34111805c8a4d11",
+          "name": "assets/SmileySans-Oblique-5eb23155.eot",
+          "size": "9.94 kB",
+        },
+        {
+          "hash": "43bee61ae0f9442d375c02b7d8f16adebf4705c381324fdf2104e66fc966554d",
+          "name": "assets/SmileySans-Oblique-74237fa4.woff2",
+          "size": "4.79 kB",
+        },
+        {
+          "hash": "5344bc8553c47356ad8851868501c28dc0aec38057d2a988186f0a08c7ff9a1f",
+          "name": "assets/SmileySans-Oblique-19b76555.woff",
+          "size": "9.81 kB",
+        },
+        {
+          "hash": "45f3051985c856de9f7d85a71053406b358ddbf86f83b284f5767b2f0a0d1d07",
+          "name": "assets/SmileySans-Oblique-b1997b28.ttf",
+          "size": "9.74 kB",
+        },
+        {
           "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
           "name": "assets/SmileySans-Oblique-115260f7.otf",
           "size": "1.63 MB",
-        },
-        {
-          "hash": "78e89cb1959182bff80420e9cb5831c88070658cd1ccc0a291ded5b552d486ee",
-          "name": "assets/SmileySans-Oblique-b1997b28.ttf",
-          "size": "9.38 kB",
-        },
-        {
-          "hash": "9badb8fdac1a822143332e43c302945ff7e41ef319efbcf91bd363c22eac62c5",
-          "name": "assets/SmileySans-Oblique.ttf-df33bc0f.woff2",
-          "size": "4.65 kB",
         },
       ]
     `)
@@ -122,9 +142,19 @@ describe('basic', () => {
     expect(getSizeAndHash(infos)).toMatchInlineSnapshot(`
       [
         {
-          "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
-          "name": "assets/SmileySans-Oblique-115260f7.otf",
-          "size": "1.63 MB",
+          "hash": "53111d5c4291d640d4d4f73573cd7cfd4ee26ef6954d154fbe23a75efd7979fe",
+          "name": "assets/SmileySans-Oblique-5eb23155.eot",
+          "size": "3.57 kB",
+        },
+        {
+          "hash": "d5bccf5d8715dedd2c9d55e4167fc8277ac94199f79c3c981f505950fb1c4610",
+          "name": "assets/SmileySans-Oblique-74237fa4.woff2",
+          "size": "1.30 kB",
+        },
+        {
+          "hash": "d94b2fddb926d7aedf900e9a22875235bb29f0c91fab50dce5052c78025753ec",
+          "name": "assets/SmileySans-Oblique-19b76555.woff",
+          "size": "3.44 kB",
         },
         {
           "hash": "658ae1befb2ee7a9a56fa800d8573c8d398ed53b122bfbc614d3dfd90a786921",
@@ -132,9 +162,9 @@ describe('basic', () => {
           "size": "3.36 kB",
         },
         {
-          "hash": "d5bccf5d8715dedd2c9d55e4167fc8277ac94199f79c3c981f505950fb1c4610",
-          "name": "assets/SmileySans-Oblique.ttf-df33bc0f.woff2",
-          "size": "1.30 kB",
+          "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
+          "name": "assets/SmileySans-Oblique-115260f7.otf",
+          "size": "1.63 MB",
         },
       ]
     `)
@@ -159,9 +189,19 @@ describe('basic', () => {
     expect(getSizeAndHash(infos)).toMatchInlineSnapshot(`
       [
         {
-          "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
-          "name": "assets/SmileySans-Oblique-115260f7.otf",
-          "size": "1.63 MB",
+          "hash": "7f1cf943a4d3b7f8768cc74ecc58ebb5e6e26e8b920bde1b98f5cd9496d2c536",
+          "name": "assets/SmileySans-Oblique-5eb23155.eot",
+          "size": "3.89 kB",
+        },
+        {
+          "hash": "65e09c9c57caee8222db99a121ce2603b1fe94269ad2d853fe5e2e231254945c",
+          "name": "assets/SmileySans-Oblique-74237fa4.woff2",
+          "size": "1.52 kB",
+        },
+        {
+          "hash": "e2c79797bd938705078d7ea1993d8a617edb1b958fbc6710661dc80bd4f5c7e1",
+          "name": "assets/SmileySans-Oblique-19b76555.woff",
+          "size": "3.76 kB",
         },
         {
           "hash": "b0aed3beb8608368f94af2d4524c36c22eb23154993c8b07033891716c513807",
@@ -169,9 +209,9 @@ describe('basic', () => {
           "size": "3.69 kB",
         },
         {
-          "hash": "65e09c9c57caee8222db99a121ce2603b1fe94269ad2d853fe5e2e231254945c",
-          "name": "assets/SmileySans-Oblique.ttf-df33bc0f.woff2",
-          "size": "1.52 kB",
+          "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
+          "name": "assets/SmileySans-Oblique-115260f7.otf",
+          "size": "1.63 MB",
         },
       ]
     `)
@@ -197,19 +237,29 @@ describe('basic', () => {
     expect(getSizeAndHash(infos)).toMatchInlineSnapshot(`
       [
         {
+          "hash": "80a8e49d006edaef57d4f347184699195c10e09bbb34037667b3bd8a19487d00",
+          "name": "assets/SmileySans-Oblique-5eb23155.eot",
+          "size": "11.79 kB",
+        },
+        {
+          "hash": "2a18c149c4c5dbeea01f49cc42d35b781b090c70314f6e85095a2a376e4a72d3",
+          "name": "assets/SmileySans-Oblique-74237fa4.woff2",
+          "size": "6.00 kB",
+        },
+        {
+          "hash": "b9e64f455dbb664473608f93f4606f88e26c03b7f6ce08d58340befd33a65283",
+          "name": "assets/SmileySans-Oblique-19b76555.woff",
+          "size": "11.66 kB",
+        },
+        {
+          "hash": "a87ff822017ed12948e6c548e019ce7d6130996af9b3f41a16ea22dc8edb394a",
+          "name": "assets/SmileySans-Oblique-b1997b28.ttf",
+          "size": "11.58 kB",
+        },
+        {
           "hash": "4c3e31d8b022113ad6784e560a8672be982e9ee197a36996b0d7887a71d6cb12",
           "name": "assets/SmileySans-Oblique-115260f7.otf",
           "size": "1.63 MB",
-        },
-        {
-          "hash": "446be185a61f756ccbbd59a4214fbd76e4e2c4f75cd2347b8b18bfb8724f1279",
-          "name": "assets/SmileySans-Oblique-b1997b28.ttf",
-          "size": "11.22 kB",
-        },
-        {
-          "hash": "250299dc49b56a3b42131af2932f83f5799dc961f20faacaf3a35c2e160f4f72",
-          "name": "assets/SmileySans-Oblique.ttf-df33bc0f.woff2",
-          "size": "5.80 kB",
         },
       ]
     `)
