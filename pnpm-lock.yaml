@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       font-minify:
-        specifier: 0.0.0-alpha.1
-        version: 0.0.0-alpha.1
+        specifier: 0.0.0-alpha.2
+        version: 0.0.0-alpha.2
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^2.6.1
@@ -46,7 +46,7 @@ importers:
       '@vitejs/plugin-vue':
         specifier: ^4.5.2
         version: 4.5.2(vite@5.0.8)(vue@3.3.11)
-      rollup-plugin-fontmin:
+      rollup-plugin-font-minify:
         specifier: workspace:*
         version: link:..
       vite:
@@ -2116,8 +2116,8 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /font-minify@0.0.0-alpha.1:
-    resolution: {integrity: sha512-T+8d5rtpHS42ZPh/cic4s9+puqV4X5JdojffASJIPUngg8UoGjr/xTTLk3O+7/9gqjyeerQegxEDjElq5lzwPQ==}
+  /font-minify@0.0.0-alpha.2:
+    resolution: {integrity: sha512-ziyVNzsVsqzIucM/4vG/zC0JNFcGQeK+XDas2j/Dx2cqPXxjEdPaEhGkcPYEPb9BWqn9TaCQuV4hD3TA24q9rQ==}
     dependencies:
       fonteditor-core: 2.3.2
     dev: false

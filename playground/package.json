@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
-    "rollup-plugin-fontmin": "workspace:*",
+    "rollup-plugin-font-minify": "workspace:*",
     "vite": "^5.0.8"
   }
 }

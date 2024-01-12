@@ -1,18 +1,18 @@
 {
-  "name": "rollup-plugin-fontmin",
+  "name": "rollup-plugin-font-minify",
   "type": "module",
   "version": "0.0.0-alpha.0",
   "packageManager": "pnpm@7.0.0",
   "description": "Remove unused font glyphs from the project during packaging to reduce font file size",
   "author": "Lete114 <me@imlete.cn>",
   "license": "MIT",
-  "homepage": "https://github.com/lete114/rollup-plugin-fontmin#readme",
+  "homepage": "https://github.com/lete114/rollup-plugin-font-minify#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lete114/rollup-plugin-fontmin.git"
+    "url": "git+https://github.com/lete114/rollup-plugin-font-minify.git"
   },
   "bugs": {
-    "url": "https://github.com/lete114/rollup-plugin-fontmin/issues"
+    "url": "https://github.com/lete114/rollup-plugin-font-minify/issues"
   },
   "exports": {
     ".": {
@@ -33,7 +33,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "font-minify": "0.0.0-alpha.1"
+    "font-minify": "0.0.0-alpha.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",

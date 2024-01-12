@@ -1,4 +1,4 @@
-# rollup-plugin-fontmin
+# rollup-plugin-font-minify
 
 Remove unused font glyphs from the project during packaging to reduce font file size
 
@@ -7,7 +7,7 @@ Remove unused font glyphs from the project during packaging to reduce font file 
 Using npm:
 
 ```bash
-npm install rollup-plugin-fontmin --save-dev
+npm install rollup-plugin-font-minify --save-dev
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ Create a `rollup.config.js` [configuration file](https://www.rollupjs.org/guide/
 
 ```js
 // rollup.config.js
-import fontmin from 'rollup-plugin-fontmin'
+import fontmin from 'rollup-plugin-font-minify'
 
 export default {
   input: 'src/index.js',
@@ -35,7 +35,7 @@ Create a `vite.config.js` [configuration file](https://vitejs.dev/config/) and i
 
 ```js
 // vite.config.js
-import fontmin from 'rollup-plugin-fontmin'
+import fontmin from 'rollup-plugin-font-minify'
 
 export default {
   plugins: [fontmin()]
