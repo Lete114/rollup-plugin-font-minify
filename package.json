@@ -14,6 +14,7 @@
   "bugs": {
     "url": "https://github.com/lete114/rollup-plugin-font-minify/issues"
   },
+  "keywords": ["font", "minify", "subset", "editor", "ttf", "otf", "eot", "woff", "woff2"],
   "exports": {
     ".": {
       "types": "./types",
