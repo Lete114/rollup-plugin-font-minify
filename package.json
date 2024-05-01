@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-font-minify",
   "type": "module",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0-alpha.1",
   "packageManager": "pnpm@7.0.0",
   "description": "Remove unused font glyphs from the project during packaging to reduce font file size",
   "author": "Lete114 <me@imlete.cn>",
@@ -14,7 +14,17 @@
   "bugs": {
     "url": "https://github.com/lete114/rollup-plugin-font-minify/issues"
   },
-  "keywords": ["font", "minify", "subset", "editor", "ttf", "otf", "eot", "woff", "woff2"],
+  "keywords": [
+    "font",
+    "minify",
+    "subset",
+    "editor",
+    "ttf",
+    "otf",
+    "eot",
+    "woff",
+    "woff2"
+  ],
   "exports": {
     ".": {
       "types": "./types",
@@ -25,6 +35,10 @@
   "main": "./src/index.js",
   "module": "./src/index.js",
   "types": "./types",
+  "files": [
+    "src",
+    "types"
+  ],
   "scripts": {
     "play": "vite build playground",
     "play:dev": "pnpm play && vite preview playground",
@@ -34,7 +48,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "font-minify": "0.0.0-alpha.2"
+    "font-minify": "0.0.0-alpha.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.1",
