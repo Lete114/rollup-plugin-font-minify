@@ -5,6 +5,7 @@ export default antfu({
     'types',
   ],
   rules: {
-    curly: ['error', 'multi-line', 'consistent'],
+    'curly': ['error', 'multi-line', 'consistent'],
+    'no-console': 'warn',
   },
 })

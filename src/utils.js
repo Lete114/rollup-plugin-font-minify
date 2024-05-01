@@ -28,3 +28,41 @@ export function displaySize(byte) {
 
   return `${numberFormatter.format(byte / ONE_THOUSAND)} kB`
 }
+
+export const color = {
+  /**
+   * @param { string } string
+   * @returns color string
+   */
+  red(string) {
+    return `\x1B[31m${string}\x1B[39m`
+  },
+  /**
+   * @param { string } string
+   * @returns color string
+   */
+  green(string) {
+    return `\x1B[32m${string}\x1B[39m`
+  },
+  /**
+   * @param { string } string
+   * @returns color string
+   */
+  blue(string) {
+    return `\x1B[34m${string}\x1B[39m`
+  },
+  /**
+   * @param { string } string
+   * @returns color string
+   */
+  yellow(string) {
+    return `\x1B[33m${string}\x1B[39m`
+  },
+  /**
+   * @param { string } string
+   * @returns color string
+   */
+  cyan(string) {
+    return `\x1B[36m${string}\x1B[39m`
+  },
+}
