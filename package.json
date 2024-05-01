@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-font-minify",
   "type": "module",
-  "version": "0.0.0-alpha.1",
+  "version": "0.0.0-alpha.2",
   "packageManager": "pnpm@7.0.0",
   "description": "Remove unused font glyphs from the project during packaging to reduce font file size",
   "author": "Lete114 <me@imlete.cn>",
